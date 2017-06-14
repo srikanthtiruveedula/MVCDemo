@@ -1,0 +1,22 @@
+﻿@model dynamic
+@model MVCDemo.Models.Employee
+@{
+    ViewBag.Title = "GetDetails";
+}
+<h2>Employee Details</h2>
+@*<ul>
+    <li>@(((Employee)ViewData["emp"]).Id)</li>
+    <li>@(((Employee)ViewData["emp"]).Name)</li>
+     <li>@(((Employee)ViewData["emp"]).City)</li>
+</ul>
+<ul>
+    <li>@ViewBag.Emp.Id</li>
+    <li>@ViewBag.Emp.Id</li>
+    <li>@ViewBag.Emp.Id</li>
+</ul>*@
+<ul>
+    <li>@Model.Id</li>
+    <li>@Model.Name</li>
+    <li>@Model.City</li>
+</ul>
+
